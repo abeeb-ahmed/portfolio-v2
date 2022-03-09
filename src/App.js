@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import AnimatedCursor from "react-animated-cursor";
 
-function App() {
+import "./App.scss";
+import Header from "./containers/Header/Header";
+import Portfolio from "./containers/Portfolio/Portfolio";
+import About from "./containers/About/About";
+import Skills from "./containers/Skills/Skills";
+import Footer from "./containers/Footer/Footer";
+import Contact from "./containers/Contact/Contact";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="cursor-dot">
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="255, 255 ,255"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      </div>
+      <Header />
+      <Portfolio />
+      <About />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
