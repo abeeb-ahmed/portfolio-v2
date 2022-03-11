@@ -7,6 +7,7 @@ import About from "./containers/About/About";
 import Skills from "./containers/Skills/Skills";
 import Footer from "./containers/Footer/Footer";
 import Contact from "./containers/Contact/Contact";
+import Navbar from "./containers/Navbar/Navbar";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           outerScale={5}
         />
       </div>
+      <Navbar />
       <Header />
       <Portfolio />
       <About />

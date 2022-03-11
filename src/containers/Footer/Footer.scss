@@ -1,0 +1,22 @@
+.footer__container {
+  text-align: center;
+  padding: 100px 0 25px 0;
+  font-family: "Roboto Mono", monospace;
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+.footer__socials {
+  margin-bottom: 10px;
+  a {
+    margin-right: 20px;
+
+    &:hover {
+      color: var(--green);
+      transition: ease-in-out all 0.3s;
+    }
+  }
+}

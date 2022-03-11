@@ -8,6 +8,7 @@ a {
   width: 100%;
   background-color: var(--dark-navy);
   color: var(--slate);
+  position: relative;
 }
 
 .outlined-btn {
@@ -20,6 +21,10 @@ a {
   cursor: pointer;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
+  &:hover {
+    background-color: var(--green-tint);
+    transition: all ease-in 0.35;
+  }
 }
 
 .subTitle {
@@ -31,4 +36,20 @@ a {
 .big-heading {
   font-size: clamp(40px, 8vw, 80px);
   margin: 0;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 6rem 7rem;
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+}
+
+.bar-padding {
+  padding-top: 30px;
+  @media (max-width: 768px) {
+    padding-top: 35px;
+  }
 }

@@ -1,8 +1,8 @@
 :root {
   --dark-navy: #020b18;
   --navy: #050b14;
-  --light-navy: #0a101a;
-  --lightest-navy: #172235;
+  --light-navy: #031227;
+  --lightest-navy: #141e30;
   --navy-shadow: rgba(1, 9, 20, 0.7);
   --dark-slate: #495670;
   --slate: #8892b0;
@@ -27,13 +27,14 @@ body {
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   background-color: var(--dark-navy);
-  line-height: 1.3;
+  line-height: 1.4;
 }
 html {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 code {
@@ -41,7 +42,9 @@ code {
     monospace;
 }
 
-h5 {
+h5,
+h2,
+h1 {
   margin: 0;
 }
 

@@ -5,7 +5,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import animationData from "../../assets/lotties/bubble.json";
 import "./Header.scss";
-import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   const mobileScreen = useMediaQuery("(max-width:500px)");
@@ -39,8 +38,7 @@ const Header = () => {
   };
 
   return (
-    <div id="header">
-      <Navbar />
+    <div id="header" className="bar-padding">
       <div className="header__container">
         <div className="header__left">
           <motion.div

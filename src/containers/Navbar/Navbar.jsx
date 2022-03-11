@@ -13,11 +13,7 @@ const Navbar = () => {
   const scroll = useScrollListener();
 
   useEffect(() => {
-    if (scroll.y > 150 && scroll.y - scroll.lastY > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
+    if (scroll.y > 150 && scroll.y - scroll.lastY > 0) setScrolled(true);
   }, [scroll.y, scroll.lastY]);
 
   const menuVariant = {
@@ -98,7 +94,7 @@ const Navbar = () => {
             </motion.a>
           </motion.li>
           <motion.button className="outlined-btn" variants={menuItem}>
-            <a href={resume} target="_blank">
+            <a href={resume} target="_blank" rel="noreferrer">
               Resume
             </a>
           </motion.button>
@@ -153,7 +149,7 @@ const Navbar = () => {
             </a>
           </motion.li>
           <motion.button className="outlined-btn" variants={mobileItem}>
-            <a href={resume} target="_blank">
+            <a href={resume} target="_blank" rel="noreferrer">
               Resume
             </a>
           </motion.button>

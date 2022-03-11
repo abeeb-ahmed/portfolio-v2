@@ -1,0 +1,40 @@
+.contact__container.container {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact__subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-family: "Roboto Mono", monospace;
+  span {
+    margin-right: 5px;
+  }
+}
+
+.contact__title {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--lightest-slate);
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
+
+.contact__content {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  button.outlined-btn {
+    padding: 1rem 1.5rem;
+    margin-top: 50px;
+    @media (max-width: 768px) {
+      margin-top: 30px;
+    }
+  }
+}

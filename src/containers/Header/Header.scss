@@ -2,7 +2,8 @@
   .header__container {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 0 8rem;
+    padding: 0 7rem;
+    position: relative;
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: row;
@@ -10,7 +11,9 @@
 
     @media (max-width: 768px) {
       padding: 0 20px;
-      height: calc(100vh - 60px);
+      height: calc(100vh - 80px);
+      top: 80px;
+      left: 0;
       flex-direction: column;
       justify-content: center;
     }
