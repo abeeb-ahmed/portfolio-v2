@@ -25,7 +25,7 @@ const portfolioData = [
     id: 3,
     name: "Travel Advisory",
     description:
-      "Find restaurants, hotels and places of attraction around you using Google map API and geo locator.",
+      "Find restaurants, hotels and places of attraction around you using Google map API and geolocator.",
     liveUrl: "https://travel-advisor-abeeb.netlify.app/",
     imageUrl: "https://i.ibb.co/ctS7tkM/travel-advisory-img-1.png",
     imageAlt: "travel",
