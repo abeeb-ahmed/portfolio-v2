@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import lottie from "lottie-web";
+import Lottie from "react-lottie";
 
 import animationData from "../../assets/lotties/bubble.json";
 import "./Header.scss";
@@ -14,9 +14,6 @@ const Header = () => {
     loop: true,
     autoplay: true,
     animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
   };
 
   const headerVariant = {
@@ -36,16 +33,6 @@ const Header = () => {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
   };
-
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: document.querySelector("#logo"),
-      animationData: animationData,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-    });
-  }, []);
 
   return (
     <div id="header" className="bar-padding">
@@ -90,7 +77,9 @@ const Header = () => {
             dragTransition={{ bounceStiffness: 400, bounceDamping: 20 }}
             dragSnapToOrigin={midScreen ? false : true}
             whileHover={{ scale: midScreen ? 1 : 1.1, cursor: "pointer" }}
-          ></motion.div>
+          >
+            <Lottie options={defaultLottieOptions} height={500} width={500} />
+          </motion.div>
         </div>
       </div>
     </div>
