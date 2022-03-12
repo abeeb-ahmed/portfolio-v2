@@ -40,7 +40,7 @@ const Footer = () => {
             <TwitterIcon />
           </a>
         </div>
-        <span>&copy; Abeeb Ahmed 2022</span>
+        <span>&copy;Abeeb Ahmed 2022</span>
       </div>
     </div>
   );

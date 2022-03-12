@@ -3,18 +3,10 @@ import { motion } from "framer-motion";
 
 import "./Navbar.scss";
 import logo from "../../assets/images/logo.png";
-import useScrollListener from "../../hooks/useScrollListener";
 import resume from "../../assets/resume.pdf";
 
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const scroll = useScrollListener();
-
-  useEffect(() => {
-    if (scroll.y > 150 && scroll.y - scroll.lastY > 0) setScrolled(true);
-  }, [scroll.y, scroll.lastY]);
 
   const menuVariant = {
     initial: {
@@ -64,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <div className="navbar">
       <div className="navbar__laptop">
         <div className="logo">
           <a href="#header">
