@@ -6,7 +6,7 @@
     position: relative;
     height: calc(100vh - 70px);
     display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
 
     @media (max-width: 768px) {
