@@ -53,3 +53,59 @@ a {
     padding-top: 35px;
   }
 }
+#logo {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.scroll-container {
+  display: flex;
+  justify-content: center;
+}
+.scroll-box {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    width: 30px;
+    height: 60px;
+    border: 3px solid var(--slate);
+    border-radius: 15px;
+    position: relative;
+  }
+}
+
+.scroller {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    width: 16px;
+    border-radius: 8px;
+    background-color: var(--slate);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 34px;
+    animation: scroller 1500ms ease-out infinite;
+  }
+}
+
+@keyframes scroller {
+  0% {
+    bottom: 34px;
+  }
+  5% {
+    top: 4px;
+  }
+  32% {
+    bottom: 4px;
+  }
+  66% {
+    top: 34px;
+    bottom: 4px;
+  }
+  100% {
+    top: 4px;
+    bottom: 34px;
+  }
+}

@@ -72,6 +72,12 @@ const Header = () => {
             </motion.div>
           </motion.div>
         </div>
+        <div className="scroll-container">
+          <div className="scroll-box">
+            <div className="scroller"></div>
+          </div>
+        </div>
+
         <div className="header__right">
           <motion.div
             id="logo"
