@@ -1,20 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Lottie from "react-lottie";
 
-import animationData from "../../assets/lotties/bubble.json";
 import "./Header.scss";
 
 const Header = () => {
-  const mobileScreen = useMediaQuery("(max-width:500px)");
   const midScreen = useMediaQuery("(max-width:768px)");
-
-  const defaultLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-  };
 
   const headerVariant = {
     initial: {
@@ -65,22 +56,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header__right">
-          <motion.div
-            id="logo"
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: [0, 1],
-              transition: { ease: "easeInOut", delay: 0.5 },
-            }}
-            drag={midScreen ? false : true}
-            dragTransition={{ bounceStiffness: 400, bounceDamping: 20 }}
-            dragSnapToOrigin={midScreen ? false : true}
-            whileHover={{ scale: midScreen ? 1 : 1.1, cursor: "pointer" }}
-          >
-            <Lottie options={defaultLottieOptions} height={500} width={500} />
-          </motion.div>
-        </div>
+        <div className="header__right"></div>
       </div>
     </div>
   );
