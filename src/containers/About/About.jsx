@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id="about" className="bar-padding">
       <div className="container">
-        <HeaderTitle headerSubTitle="01" headerTitle="About Me" />
+        <HeaderTitle headerSubTitle="02" headerTitle="About Me" />
         <div className="about__container">
           <motion.div
             className="about__left"
