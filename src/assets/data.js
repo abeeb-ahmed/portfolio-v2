@@ -1,3 +1,5 @@
+// Portfolio image size = 860 x 483
+
 const portfolioData = [
   {
     id: 1,
@@ -34,15 +36,25 @@ const portfolioData = [
   },
   {
     id: 4,
-    name: "TechShop",
-    description:
-      "A fully functional ecommerce web app with payment gateway, user authentication, product filtering, admin page and so on.",
-    liveUrl: "https://techshop-app.herokuapp.com/",
-    imageUrl: "https://i.ibb.co/2dC4zDD/techshop-img.png",
-    imageAlt: "ecommerce",
-    stack: ["React", "NodeJs", "Axios", "MongoDB", "Bootstrap", "JWT"],
-    gitUrl: "https://techshop-app.herokuapp.com/",
+    name: "FolaDavid Care Foundation",
+    description: "Website development for FolaDavid Foundation",
+    liveUrl: "https://www.foladavidfoundation.org/",
+    imageUrl: "https://i.ibb.co/BCTcDx3/Screenshot-2022-06-12-135806-1.png",
+    imageAlt: "foladavid foundation",
+    stack: ["React", "CSS"],
+    gitUrl: "",
   },
+  // {
+  //   id: 5,
+  //   name: "TechShop",
+  //   description:
+  //     "A fully functional ecommerce web app with payment gateway, user authentication, product filtering, admin page and so on.",
+  //   liveUrl: "https://techshop-app.herokuapp.com/",
+  //   imageUrl: "https://i.ibb.co/2dC4zDD/techshop-img.png",
+  //   imageAlt: "ecommerce",
+  //   stack: ["React", "NodeJs", "Axios", "MongoDB", "Bootstrap", "JWT"],
+  //   gitUrl: "https://techshop-app.herokuapp.com/",
+  // },
 ];
 
 const fadeInAnim = {

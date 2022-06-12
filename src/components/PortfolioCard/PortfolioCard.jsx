@@ -44,12 +44,14 @@ const PortfolioCard = ({
           ))}
         </div>
         <div className="portfolio-card__btns">
-          <a href={gitUrl} target="_blank" rel="noreferrer">
-            <button className="outlined-btn">
-              <GitHubIcon sx={{ mr: 1 }} />
-              Code
-            </button>
-          </a>
+          {gitUrl !== "" && (
+            <a href={gitUrl} target="_blank" rel="noreferrer">
+              <button className="outlined-btn">
+                <GitHubIcon sx={{ mr: 1 }} />
+                Code
+              </button>
+            </a>
+          )}
           <a href={liveUrl} target="_blank" rel="noreferrer">
             <button className="outlined-btn">
               <VisibilityIcon sx={{ mr: 1 }} />
