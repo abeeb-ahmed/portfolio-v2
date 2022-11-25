@@ -25,14 +25,14 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: "Travel Advisory",
+    name: "Booky",
     description:
-      "Find restaurants, hotels and places of attraction around you using Google map API and geolocator.",
-    liveUrl: "https://travel-advisor-abeeb.netlify.app/",
-    imageUrl: "https://i.ibb.co/ctS7tkM/travel-advisory-img-1.png",
+      "A booking reservation web app with an admin page to manage hotels, users and rooms.",
+    liveUrl: "https://booky-web-app.onrender.com/",
+    imageUrl: "https://i.ibb.co/CQy4CJm/booky2.png",
     imageAlt: "travel",
-    stack: ["React", "Material UI", "Axios", "Google Map API"],
-    gitUrl: "https://github.com/abeeb-ahmed/travel-advisory-web",
+    stack: ["React", "Nodejs", "Axios", "MongoDB", "Sass", "JWT"],
+    gitUrl: "https://github.com/abeeb-ahmed/booky-v2",
   },
   {
     id: 4,
@@ -54,6 +54,17 @@ const portfolioData = [
   //   imageAlt: "ecommerce",
   //   stack: ["React", "NodeJs", "Axios", "MongoDB", "Bootstrap", "JWT"],
   //   gitUrl: "https://techshop-app.herokuapp.com/",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Travel Advisory",
+  //   description:
+  //     "Find restaurants, hotels and places of attraction around you using Google map API and geolocator.",
+  //   liveUrl: "https://travel-advisor-abeeb.netlify.app/",
+  //   imageUrl: "https://i.ibb.co/ctS7tkM/travel-advisory-img-1.png",
+  //   imageAlt: "travel",
+  //   stack: ["React", "Material UI", "Axios", "Google Map API"],
+  //   gitUrl: "https://github.com/abeeb-ahmed/travel-advisory-web",
   // },
 ];
 
