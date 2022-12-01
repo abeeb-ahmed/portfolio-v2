@@ -3,15 +3,16 @@
 const portfolioData = [
   {
     id: 1,
-    name: "Krypto",
+    name: "Booky",
     description:
-      "A web app that allows you send ethereum from one wallet to another though smart contract, with transactions saved on the blockchain.",
-    liveUrl: "https://krypt-abeeb.netlify.app/",
-    imageUrl: "https://i.ibb.co/WHSQ5bB/krypto-img-1.png",
-    imageAlt: "blockchain",
-    stack: ["React", "Solidity", "Blockchain", "Tailwind CSS"],
-    gitUrl: "https://github.com/abeeb-ahmed/krypt-crypto-app",
+      "A booking reservation web app with an admin page to manage hotels, users and rooms.",
+    liveUrl: "https://booky-web-app.onrender.com/",
+    imageUrl: "https://i.ibb.co/CQy4CJm/booky2.png",
+    imageAlt: "travel",
+    stack: ["React", "Nodejs", "Axios", "MongoDB", "Sass", "JWT"],
+    gitUrl: "https://github.com/abeeb-ahmed/booky-v2",
   },
+
   {
     id: 2,
     name: "Cryptoverse",
@@ -25,14 +26,14 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: "Booky",
+    name: "Chatty",
     description:
-      "A booking reservation web app with an admin page to manage hotels, users and rooms.",
-    liveUrl: "https://booky-web-app.onrender.com/",
-    imageUrl: "https://i.ibb.co/CQy4CJm/booky2.png",
-    imageAlt: "travel",
-    stack: ["React", "Nodejs", "Axios", "MongoDB", "Sass", "JWT"],
-    gitUrl: "https://github.com/abeeb-ahmed/booky-v2",
+      "A chat application that allows you chat with your friends in real-time",
+    liveUrl: "https://chatty-app-1tvv.onrender.com/",
+    imageUrl: "https://i.ibb.co/ts5kMRm/chatty2.png",
+    imageAlt: "chat",
+    stack: ["React", "Firebase", "Sass"],
+    gitUrl: "https://github.com/abeeb-ahmed/chatty-app",
   },
   {
     id: 4,
@@ -43,6 +44,17 @@ const portfolioData = [
     imageAlt: "foladavid foundation",
     stack: ["React", "CSS"],
     gitUrl: "",
+  },
+  {
+    id: 5,
+    name: "Krypto",
+    description:
+      "A web app that allows you send ethereum from one wallet to another though smart contract, with transactions saved on the blockchain.",
+    liveUrl: "https://krypt-abeeb.netlify.app/",
+    imageUrl: "https://i.ibb.co/WHSQ5bB/krypto-img-1.png",
+    imageAlt: "blockchain",
+    stack: ["React", "Solidity", "Blockchain", "Tailwind CSS"],
+    gitUrl: "https://github.com/abeeb-ahmed/krypt-crypto-app",
   },
   // {
   //   id: 5,
