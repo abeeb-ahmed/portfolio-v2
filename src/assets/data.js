@@ -30,7 +30,7 @@ const portfolioData = [
     description:
       "A chat application that allows you chat with your friends in real-time",
     liveUrl: "https://chatty-app-1tvv.onrender.com/",
-    imageUrl: "https://i.ibb.co/ts5kMRm/chatty2.png",
+    imageUrl: "https://i.ibb.co/SXYst8M/chatty2.png",
     imageAlt: "chat",
     stack: ["React", "Firebase", "Sass"],
     gitUrl: "https://github.com/abeeb-ahmed/chatty-app",
