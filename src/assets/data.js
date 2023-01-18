@@ -1,8 +1,19 @@
+import { v4 as uuidv4 } from "uuid";
 // Portfolio image size = 860 x 483
 
 const portfolioData = [
   {
-    id: 1,
+    id: uuidv4(),
+    name: "Viraly",
+    description: "A fully functional social media web app.",
+    liveUrl: "https://viraly-social.onrender.com/",
+    imageUrl: "https://i.ibb.co/YWYJW00/viraly-2.png",
+    imageAlt: "social-media",
+    stack: ["React", "Nodejs", "Axios", "MySQL", "Sass", "JWT"],
+    gitUrl: "https://github.com/abeeb-ahmed/viraly",
+  },
+  {
+    id: uuidv4(),
     name: "Booky",
     description:
       "A booking reservation web app with an admin page to manage hotels, users and rooms.",
@@ -14,7 +25,7 @@ const portfolioData = [
   },
 
   {
-    id: 2,
+    id: uuidv4(),
     name: "Cryptoverse",
     description:
       "Website to get real time updates on cryptocurrency prices, news and other information.",
@@ -25,7 +36,7 @@ const portfolioData = [
     gitUrl: "https://github.com/abeeb-ahmed/cryptoverse",
   },
   {
-    id: 3,
+    id: uuidv4(),
     name: "Chatty",
     description:
       "A chat application that allows you chat with your friends in real-time",
@@ -36,7 +47,7 @@ const portfolioData = [
     gitUrl: "https://github.com/abeeb-ahmed/chatty-app",
   },
   {
-    id: 4,
+    id: uuidv4(),
     name: "FolaDavid Care Foundation",
     description: "Website development for FolaDavid Foundation",
     liveUrl: "https://www.foladavidfoundation.org/",
@@ -46,7 +57,7 @@ const portfolioData = [
     gitUrl: "",
   },
   {
-    id: 5,
+    id: uuidv4(),
     name: "Krypto",
     description:
       "A web app that allows you send ethereum from one wallet to another though smart contract, with transactions saved on the blockchain.",
@@ -57,7 +68,7 @@ const portfolioData = [
     gitUrl: "https://github.com/abeeb-ahmed/krypt-crypto-app",
   },
   // {
-  //   id: 5,
+  //   id: uuidv4(),
   //   name: "TechShop",
   //   description:
   //     "A fully functional ecommerce web app with payment gateway, user authentication, product filtering, admin page and so on.",
@@ -68,7 +79,7 @@ const portfolioData = [
   //   gitUrl: "https://techshop-app.herokuapp.com/",
   // },
   // {
-  //   id: 6,
+  //   id: uuidv4(),
   //   name: "Travel Advisory",
   //   description:
   //     "Find restaurants, hotels and places of attraction around you using Google map API and geolocator.",
